@@ -56,7 +56,6 @@ spec:
     if: ${{ vars.openpr == 'true' }}
     config:
       repoURL: ${{ vars.repoURL }}
-      createTargetBranch: true
       sourceBranch: ${{ task.outputs.push.branch }}
       targetBranch: ${{ vars.branch }}
   # Wait for the pull request to be merged.
